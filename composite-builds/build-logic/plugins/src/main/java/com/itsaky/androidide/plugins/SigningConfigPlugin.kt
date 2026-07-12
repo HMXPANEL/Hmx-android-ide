@@ -48,6 +48,15 @@ class SigningConfigPlugin : Plugin<Project> {
       val signingKey = signingKey.get().asFile
       if (!signingKey.exists()) {
         logger.warn("Signing key not found. Debug signing will be used.")
+        // Fall back to the default debug signing config so that release builds
+        // can still be assembled (e.g. on forks without signing secrets).
+        extensions.getByType(BaseExtension::class.java).let { extension ->
+          extension.signingConfigs.findByName("debug")?.let { debugConfig ->
+            extension.buildTypes.configureEach { buildType ->
+              buildType.signingConfig = debugConfig
+            }
+          }
+        }
         return
       }
 
