@@ -52,8 +52,8 @@ class SigningConfigPlugin : Plugin<Project> {
         // can still be assembled (e.g. on forks without signing secrets).
         extensions.getByType(BaseExtension::class.java).let { extension ->
           extension.signingConfigs.findByName("debug")?.let { debugConfig ->
-            extension.buildTypes.configureEach { buildType ->
-              buildType.signingConfig = debugConfig
+            extension.buildTypes.configureEach {
+              signingConfig = debugConfig
             }
           }
         }
