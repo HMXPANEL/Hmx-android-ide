@@ -2,13 +2,13 @@ name: Build and test
 
 on:
   push:
-    branches: [ "dev", "main", "indexing", "release/**" ]
+    branches: [ "dev", "main", "master", "indexing", "release/**" ]
     paths-ignore:
       - '**.md'
       - 'fastlane/**'
       - '.github/workflows/crowdin_contributors.yml'
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "dev", "main", "master" ]
     paths-ignore:
       - '**.md'
       - 'fastlane/**'
@@ -78,24 +78,11 @@ jobs:
         run: |
           build_type=${{ matrix.build_type }}
           ./gradlew :core:app:assemble${build_type^}
-      - name: Copy ${{ matrix.build_type }} APK
-        run: |
-          cp core/app/build/outputs/apk/${{ matrix.build_type }}/app-*.apk ./
-      - name: Upload arm64-v8a ${{ matrix.build_type }} APK
+      - name: Upload ${{ matrix.build_type }} APKs
         uses: actions/upload-artifact@v4
         with:
-          name: apk-arm64-v8a-${{ matrix.build_type }}
-          path: app-arm64-v8a-${{ matrix.build_type }}.apk
-      - name: Upload armeabi-v7a ${{ matrix.build_type }} APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: apk-armeabi-v7a-${{ matrix.build_type }}
-          path: app-armeabi-v7a-${{ matrix.build_type }}.apk
-      - name: Upload x86_64 ${{ matrix.build_type }} APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: apk-x86_64-${{ matrix.build_type }}
-          path: app-x86_64-${{ matrix.build_type }}.apk
+          name: apk-${{ matrix.build_type }}
+          path: core/app/build/outputs/apk/${{ matrix.build_type }}/*.apk
       - name: Upload ${{ matrix.build_type }} mappings
         if: ${{ always() && matrix.build_type == 'release' }}
         uses: actions/upload-artifact@v4
@@ -251,18 +238,11 @@ jobs:
         with:
           java-version: ${{ env.BUILD_JAVA_VERSION }}
           distribution: ${{ env.BUILD_JAVA_DIST }}
-      - name: Download arm64-v8a APK
+      - name: Download release APKs
         uses: actions/download-artifact@v4
         with:
-          name: apk-arm64-v8a-release
-      - name: Download x86_64 APK
-        uses: actions/download-artifact@v4
-        with:
-          name: apk-x86_64-release
-      - name: Download armeabi-v7a APK
-        uses: actions/download-artifact@v4
-        with:
-          name: apk-armeabi-v7a-release
+          name: apk-release
+          path: .
       - name: Change Gradle wrapper permissions
         run: chmod +x ./gradlew
       - name: Restore cache
