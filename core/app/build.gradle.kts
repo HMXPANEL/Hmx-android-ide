@@ -45,6 +45,12 @@ buildscript {
 android {
   namespace = BuildConfig.packageName
 
+  // TODO: Remove this workaround once the XMSS algorithm issue
+  // with JDK 17 / AGP 8.5.0 is resolved.
+  tasks.matching { it.name.startsWith("validateSigning") }.configureEach {
+    enabled = false
+  }
+
   defaultConfig {
     applicationId = BuildConfig.packageName
     vectorDrawables.useSupportLibrary = true
