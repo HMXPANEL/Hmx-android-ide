@@ -53,7 +53,9 @@ class SigningConfigPlugin : Plugin<Project> {
         extensions.getByType(BaseExtension::class.java).let { extension ->
           extension.signingConfigs.findByName("debug")?.let { debugConfig ->
             extension.buildTypes.configureEach {
-              signingConfig = debugConfig
+              if (name != "debug") {
+                signingConfig = debugConfig
+              }
             }
           }
         }
@@ -75,8 +77,10 @@ class SigningConfigPlugin : Plugin<Project> {
             keyPassword = keyPass
           }
 
-          extension.buildTypes.forEach { buildType ->
-            buildType.signingConfig = config
+          extension.buildTypes.configureEach {
+            if (name != "debug") {
+              signingConfig = config
+            }
           }
         } else {
           logger.warn(
