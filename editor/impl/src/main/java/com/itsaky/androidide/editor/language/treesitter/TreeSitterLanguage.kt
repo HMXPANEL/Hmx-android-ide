@@ -108,14 +108,18 @@ abstract class TreeSitterLanguage(
   override fun getIndentAdvance(
     content: ContentReference,
     line: Int,
-    column: Int,
-    spaceCountOnLine: Int,
-    tabCountOnLine: Int
+    column: Int
   ): Int {
+    val lineText = content.getLine(line).substring(0, column)
+    var spaceCountOnLine = 0
+    var tabCountOnLine = 0
+    for (c in lineText) {
+      if (c == ' ') spaceCountOnLine++
+      else if (c == '\t') tabCountOnLine++
+      else break
+    }
     return try {
       if (line == content.reference.lineCount - 1) {
-        // line + 1 does not exist
-        // TODO(itsaky): Update this implementation when this behavior is fixed in sora-editor
         return DEF_IDENT_ADV
       }
 
@@ -123,7 +127,6 @@ abstract class TreeSitterLanguage(
       linesToReq[0] = IntPair.pack(line, column)
 
       if (content.reference.isNonBlankLine(line + 1)) {
-        // consider the indentation of the next line only if it is non-blank
         linesToReq += IntPair.pack(line + 1, 0)
       }
 
@@ -155,7 +158,6 @@ abstract class TreeSitterLanguage(
       log.error("An error occurred computing indentation at line:column::{}:{}", line, column, e)
       DEF_IDENT_ADV
     }
-
   }
 
   override fun destroy() {
