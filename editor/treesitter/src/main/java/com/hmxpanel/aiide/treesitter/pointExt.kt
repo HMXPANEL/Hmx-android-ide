@@ -17,9 +17,8 @@
 
 package com.hmxpanel.aiide.treesitter
 
-/**
- * The 0-based start line number.
- */
+import com.itsaky.androidide.treesitter.TSRange
+
 val TSRange.startLine: Int
   get() = getStartPoint().getRow()
 

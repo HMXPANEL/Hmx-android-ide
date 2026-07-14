@@ -17,12 +17,9 @@
 
 package com.hmxpanel.aiide.treesitter
 
-/**
- * Get the first node at the line and column.
- *
- * @param line The 0-based line number.
- * @param colBytes The 0-based column number in bytes.
- */
+import com.itsaky.androidide.treesitter.TSNode
+import com.itsaky.androidide.treesitter.TSPoint
+
 fun TSNode.getNodeAt(line: Int, colBytes: Int): TSNode? {
   return getDescendantForPointRange(TSPoint.create(line, colBytes),
     TSPoint.create(line, colBytes + 1))
