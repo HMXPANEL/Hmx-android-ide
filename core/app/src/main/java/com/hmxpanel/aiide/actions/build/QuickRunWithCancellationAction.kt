@@ -179,7 +179,7 @@ class QuickRunWithCancellationAction(context: Context, override val order: Int) 
     log.info("Sending build cancellation request...")
     val builder = Lookup.getDefault().lookup(BuildService.KEY_BUILD_SERVICE)
     if (builder?.isToolingServerStarted() != true) {
-      flashError(com.itsaky.androidide.projects.R.string.msg_tooling_server_unavailable)
+      flashError(com.hmxpanel.aiide.projects.R.string.msg_tooling_server_unavailable)
       return false
     }
 

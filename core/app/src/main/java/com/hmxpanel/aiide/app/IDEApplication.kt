@@ -49,7 +49,7 @@ import com.hmxpanel.aiide.resources.localization.LocaleProvider
 import com.hmxpanel.aiide.stats.AndroidIDEStats
 import com.hmxpanel.aiide.stats.StatUploadWorker
 import com.hmxpanel.aiide.syntax.colorschemes.SchemeAndroidIDE
-import com.hmxpanel.aiide.treesitter.TreeSitter
+import com.itsaky.androidide.treesitter.TreeSitter
 import com.hmxpanel.aiide.ui.themes.IDETheme
 import com.hmxpanel.aiide.ui.themes.IThemeManager
 import com.hmxpanel.aiide.utils.RecyclableObjectPool
