@@ -18,8 +18,8 @@
 package com.hmxpanel.aiide.editor.utils
 
 import androidx.core.text.trimmedLength
-import com.hmxpanel.aiide.treesitter.TSNode
-import com.hmxpanel.aiide.treesitter.TSTree
+import com.itsaky.androidide.treesitter.TSNode
+import com.itsaky.androidide.treesitter.TSTree
 import com.hmxpanel.aiide.treesitter.getNodeAt
 import io.github.rosemoe.sora.text.Content
 import io.github.rosemoe.sora.text.TextUtils

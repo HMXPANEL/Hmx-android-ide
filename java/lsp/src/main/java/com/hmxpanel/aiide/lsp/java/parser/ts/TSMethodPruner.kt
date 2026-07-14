@@ -17,11 +17,11 @@
 
 package com.hmxpanel.aiide.lsp.java.parser.ts
 
-import com.hmxpanel.aiide.treesitter.TSQuery
-import com.hmxpanel.aiide.treesitter.TSQueryCursor
-import com.hmxpanel.aiide.treesitter.TSQueryMatch
-import com.hmxpanel.aiide.treesitter.TSTree
-import com.hmxpanel.aiide.treesitter.java.TSLanguageJava
+import com.itsaky.androidide.treesitter.TSQuery
+import com.itsaky.androidide.treesitter.TSQueryCursor
+import com.itsaky.androidide.treesitter.TSQueryMatch
+import com.itsaky.androidide.treesitter.TSTree
+import com.itsaky.androidide.treesitter.java.TSLanguageJava
 
 /**
  * Helper class to prune method bodies in Java source code using.

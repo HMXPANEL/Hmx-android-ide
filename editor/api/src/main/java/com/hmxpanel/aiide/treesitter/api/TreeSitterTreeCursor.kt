@@ -17,7 +17,7 @@
 
 package com.hmxpanel.aiide.treesitter.api
 
-import com.hmxpanel.aiide.treesitter.TSTreeCursor
+import com.itsaky.androidide.treesitter.TSTreeCursor
 import com.hmxpanel.aiide.utils.DefaultRecyclable
 import com.hmxpanel.aiide.utils.RecyclableObjectPool
 

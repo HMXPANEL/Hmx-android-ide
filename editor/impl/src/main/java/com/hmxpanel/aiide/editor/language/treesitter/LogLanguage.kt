@@ -19,7 +19,7 @@ package com.hmxpanel.aiide.editor.language.treesitter
 
 import android.content.Context
 import com.hmxpanel.aiide.editor.language.treesitter.TreeSitterLanguage.Factory
-import com.hmxpanel.aiide.treesitter.log.TSLanguageLog
+import com.itsaky.androidide.treesitter.log.TSLanguageLog
 
 /**
  * Tree Sitter language implementation for logs.

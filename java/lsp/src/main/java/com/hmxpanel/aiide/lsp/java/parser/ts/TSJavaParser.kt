@@ -20,8 +20,8 @@ package com.hmxpanel.aiide.lsp.java.parser.ts
 import com.hmxpanel.aiide.eventbus.events.file.FileDeletionEvent
 import com.hmxpanel.aiide.eventbus.events.file.FileRenameEvent
 import com.hmxpanel.aiide.lsp.java.parser.IJavaParser
-import com.hmxpanel.aiide.treesitter.TSParser
-import com.hmxpanel.aiide.treesitter.java.TSLanguageJava
+import com.itsaky.androidide.treesitter.TSParser
+import com.itsaky.androidide.treesitter.java.TSLanguageJava
 import com.hmxpanel.aiide.utils.StopWatch
 import jdkx.tools.JavaFileObject
 import org.greenrobot.eventbus.EventBus

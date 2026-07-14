@@ -17,8 +17,8 @@
 
 package com.hmxpanel.aiide.treesitter.api
 
-import com.hmxpanel.aiide.treesitter.TSPoint
-import com.hmxpanel.aiide.treesitter.TSRange
+import com.itsaky.androidide.treesitter.TSPoint
+import com.itsaky.androidide.treesitter.TSRange
 import com.hmxpanel.aiide.utils.DefaultRecyclable
 import com.hmxpanel.aiide.utils.RecyclableObjectPool
 

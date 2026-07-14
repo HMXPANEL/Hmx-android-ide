@@ -17,24 +17,24 @@
 
 package com.hmxpanel.aiide.treesitter.api
 
-import com.hmxpanel.aiide.treesitter.TSInputEdit
-import com.hmxpanel.aiide.treesitter.TSLanguage
-import com.hmxpanel.aiide.treesitter.TSLookaheadIterator
-import com.hmxpanel.aiide.treesitter.TSNode
-import com.hmxpanel.aiide.treesitter.TSParser
-import com.hmxpanel.aiide.treesitter.TSPoint
-import com.hmxpanel.aiide.treesitter.TSQuery
-import com.hmxpanel.aiide.treesitter.TSQueryCapture
-import com.hmxpanel.aiide.treesitter.TSQueryCursor
-import com.hmxpanel.aiide.treesitter.TSQueryMatch
-import com.hmxpanel.aiide.treesitter.TSQueryPredicateStep
-import com.hmxpanel.aiide.treesitter.TSRange
-import com.hmxpanel.aiide.treesitter.TSTree
-import com.hmxpanel.aiide.treesitter.TSTreeCursor
-import com.hmxpanel.aiide.treesitter.TSTreeCursorNode
-import com.hmxpanel.aiide.treesitter.string.SynchronizedUTF16String
-import com.hmxpanel.aiide.treesitter.string.UTF16String
-import com.hmxpanel.aiide.treesitter.util.TSObjectFactory
+import com.itsaky.androidide.treesitter.TSInputEdit
+import com.itsaky.androidide.treesitter.TSLanguage
+import com.itsaky.androidide.treesitter.TSLookaheadIterator
+import com.itsaky.androidide.treesitter.TSNode
+import com.itsaky.androidide.treesitter.TSParser
+import com.itsaky.androidide.treesitter.TSPoint
+import com.itsaky.androidide.treesitter.TSQuery
+import com.itsaky.androidide.treesitter.TSQueryCapture
+import com.itsaky.androidide.treesitter.TSQueryCursor
+import com.itsaky.androidide.treesitter.TSQueryMatch
+import com.itsaky.androidide.treesitter.TSQueryPredicateStep
+import com.itsaky.androidide.treesitter.TSRange
+import com.itsaky.androidide.treesitter.TSTree
+import com.itsaky.androidide.treesitter.TSTreeCursor
+import com.itsaky.androidide.treesitter.TSTreeCursorNode
+import com.itsaky.androidide.treesitter.string.SynchronizedUTF16String
+import com.itsaky.androidide.treesitter.string.UTF16String
+import com.itsaky.androidide.treesitter.util.TSObjectFactory
 
 /**
  * [TSObjectFactory] implementation for AndroidIDE.

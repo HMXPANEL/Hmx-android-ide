@@ -25,7 +25,7 @@ import com.hmxpanel.aiide.editor.language.utils.CommonSymbolPairs
 import com.hmxpanel.aiide.lsp.api.ILanguageServer
 import com.hmxpanel.aiide.lsp.api.ILanguageServerRegistry
 import com.hmxpanel.aiide.lsp.java.JavaLanguageServer
-import com.hmxpanel.aiide.treesitter.java.TSLanguageJava
+import com.itsaky.androidide.treesitter.java.TSLanguageJava
 import io.github.rosemoe.sora.lang.Language.INTERRUPTION_LEVEL_SLIGHT
 import io.github.rosemoe.sora.util.MyCharacter
 import io.github.rosemoe.sora.widget.SymbolPairMatch

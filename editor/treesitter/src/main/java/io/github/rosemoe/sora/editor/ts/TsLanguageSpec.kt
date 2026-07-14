@@ -24,9 +24,9 @@
 
 package io.github.rosemoe.sora.editor.ts
 
-import com.hmxpanel.aiide.treesitter.TSLanguage
-import com.hmxpanel.aiide.treesitter.TSQuery
-import com.hmxpanel.aiide.treesitter.TSQueryError
+import com.itsaky.androidide.treesitter.TSLanguage
+import com.itsaky.androidide.treesitter.TSQuery
+import com.itsaky.androidide.treesitter.TSQueryError
 import io.github.rosemoe.sora.editor.ts.predicate.Predicator
 import io.github.rosemoe.sora.editor.ts.predicate.TsPredicate
 import io.github.rosemoe.sora.editor.ts.predicate.builtin.MatchPredicate

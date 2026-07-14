@@ -20,8 +20,8 @@ package com.hmxpanel.aiide.editor.language.treesitter
 import android.graphics.Color
 import androidx.core.graphics.ColorUtils
 import com.hmxpanel.aiide.editor.schemes.LanguageScheme
-import com.hmxpanel.aiide.treesitter.TSQuery
-import com.hmxpanel.aiide.treesitter.TSQueryCapture
+import com.itsaky.androidide.treesitter.TSQuery
+import com.itsaky.androidide.treesitter.TSQueryCapture
 import com.hmxpanel.aiide.utils.parseHexColor
 import io.github.rosemoe.sora.editor.ts.spans.DefaultSpanFactory
 import io.github.rosemoe.sora.editor.ts.spans.TsSpanFactory

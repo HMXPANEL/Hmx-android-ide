@@ -26,7 +26,7 @@ import com.hmxpanel.aiide.editor.schemes.LanguageScheme
 import com.hmxpanel.aiide.editor.schemes.LanguageSpecProvider.getLanguageSpec
 import com.hmxpanel.aiide.editor.schemes.LocalCaptureSpecProvider.newLocalCaptureSpec
 import com.hmxpanel.aiide.editor.utils.isNonBlankLine
-import com.hmxpanel.aiide.treesitter.TSLanguage
+import com.itsaky.androidide.treesitter.TSLanguage
 import com.hmxpanel.aiide.utils.IntPair
 import io.github.rosemoe.sora.editor.ts.TsTheme
 import io.github.rosemoe.sora.lang.Language.INTERRUPTION_LEVEL_STRONG
