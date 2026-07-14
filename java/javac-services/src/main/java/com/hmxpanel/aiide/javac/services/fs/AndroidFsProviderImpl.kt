@@ -17,7 +17,7 @@
 
 package com.hmxpanel.aiide.javac.services.fs
 
-import com.hmxpanel.aiide.zipfs2.AndroidFsProvider
+import com.itsaky.androidide.zipfs2.AndroidFsProvider
 import java.nio.file.spi.FileSystemProvider
 
 /** @author Akash Yadav */

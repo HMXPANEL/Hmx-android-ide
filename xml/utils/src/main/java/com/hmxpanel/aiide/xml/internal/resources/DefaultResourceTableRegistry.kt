@@ -34,7 +34,7 @@ import com.android.aaptcompiler.TableExtractorOptions
 import com.android.aaptcompiler.extractPathData
 import com.google.auto.service.AutoService
 import com.hmxpanel.aiide.aapt.logging.IDELogger
-import com.hmxpanel.aiide.layoutlib.resources.ResourceVisibility.PUBLIC
+import com.itsaky.androidide.layoutlib.resources.ResourceVisibility.PUBLIC
 import com.hmxpanel.aiide.xml.internal.resources.DefaultResourceTableRegistry.SingleLineValueEntryType.ACTIVITY_ACTIONS
 import com.hmxpanel.aiide.xml.internal.resources.DefaultResourceTableRegistry.SingleLineValueEntryType.BROADCAST_ACTIONS
 import com.hmxpanel.aiide.xml.internal.resources.DefaultResourceTableRegistry.SingleLineValueEntryType.CATEGORIES

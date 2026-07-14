@@ -30,7 +30,7 @@ import com.hmxpanel.aiide.javac.services.NBTreeMaker
 import com.hmxpanel.aiide.javac.services.fs.CacheFSInfoSingleton
 import com.hmxpanel.aiide.javac.services.fs.JarPackageProviderImpl
 import com.hmxpanel.aiide.utils.VMUtils
-import com.hmxpanel.aiide.zipfs2.JarPackageProvider
+import com.itsaky.androidide.zipfs2.JarPackageProvider
 import jdkx.tools.DiagnosticListener
 import jdkx.tools.JavaFileManager
 import jdkx.tools.JavaFileObject

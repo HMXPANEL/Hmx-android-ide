@@ -44,7 +44,7 @@ import com.android.aaptcompiler.parseResourceName
 import com.android.aaptcompiler.resourceIdFromParts
 import com.android.aaptcompiler.resourceTypeFromTag
 import com.android.utils.ILogger
-import com.hmxpanel.aiide.layoutlib.resources.ResourceVisibility
+import com.itsaky.androidide.layoutlib.resources.ResourceVisibility
 
 fun deserializeConfigFromPb(
   config: ConfigurationOuterClass.Configuration, logger: ILogger?

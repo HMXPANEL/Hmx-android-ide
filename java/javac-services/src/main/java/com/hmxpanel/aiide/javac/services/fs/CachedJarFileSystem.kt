@@ -17,8 +17,8 @@
 
 package com.hmxpanel.aiide.javac.services.fs
 
-import com.hmxpanel.aiide.zipfs2.ZipFileSystem
-import com.hmxpanel.aiide.zipfs2.ZipFileSystemProvider
+import com.itsaky.androidide.zipfs2.ZipFileSystem
+import com.itsaky.androidide.zipfs2.ZipFileSystemProvider
 import jdkx.lang.model.SourceVersion
 import openjdk.tools.javac.file.RelativePath.RelativeDirectory
 import java.io.IOException

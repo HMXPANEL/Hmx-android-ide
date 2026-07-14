@@ -17,7 +17,7 @@
 
 package com.hmxpanel.aiide.lsp.util;
 
-import com.hmxpanel.aiide.fuzzysearch.FuzzySearch;
+import com.itsaky.androidide.fuzzysearch.FuzzySearch;
 import java.util.Locale;
 
 /**

@@ -17,11 +17,11 @@
 
 package com.hmxpanel.aiide.lsp.java.compiler;
 
-import static com.hmxpanel.aiide.javac.config.JavacConfigProvider.PROP_ANDROIDIDE_JAVA_HOME;
-import static com.hmxpanel.aiide.javac.config.JavacConfigProvider.disableModules;
-import static com.hmxpanel.aiide.javac.config.JavacConfigProvider.enableModules;
-import static com.hmxpanel.aiide.javac.config.JavacConfigProvider.setLatestSourceVersion;
-import static com.hmxpanel.aiide.javac.config.JavacConfigProvider.setLatestSupportedSourceVersion;
+import static com.itsaky.androidide.javac.config.JavacConfigProvider.PROP_ANDROIDIDE_JAVA_HOME;
+import static com.itsaky.androidide.javac.config.JavacConfigProvider.disableModules;
+import static com.itsaky.androidide.javac.config.JavacConfigProvider.enableModules;
+import static com.itsaky.androidide.javac.config.JavacConfigProvider.setLatestSourceVersion;
+import static com.itsaky.androidide.javac.config.JavacConfigProvider.setLatestSupportedSourceVersion;
 import static com.hmxpanel.aiide.utils.Environment.JAVA_HOME;
 
 import androidx.annotation.NonNull;

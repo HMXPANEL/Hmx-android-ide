@@ -17,7 +17,7 @@
 
 package com.hmxpanel.aiide.javac.services.fs
 
-import com.hmxpanel.aiide.zipfs2.JarPackageProvider
+import com.itsaky.androidide.zipfs2.JarPackageProvider
 import openjdk.tools.javac.file.RelativePath.RelativeDirectory
 import java.nio.file.Path
 

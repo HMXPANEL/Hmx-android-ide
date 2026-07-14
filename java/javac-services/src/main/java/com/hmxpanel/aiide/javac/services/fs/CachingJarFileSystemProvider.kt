@@ -17,8 +17,8 @@
 
 package com.hmxpanel.aiide.javac.services.fs
 
-import com.hmxpanel.aiide.zipfs2.JarFileSystemProvider
-import com.hmxpanel.aiide.zipfs2.ZipFileSystem
+import com.itsaky.androidide.zipfs2.JarFileSystemProvider
+import com.itsaky.androidide.zipfs2.ZipFileSystem
 import org.slf4j.LoggerFactory
 import java.nio.file.FileSystem
 import java.nio.file.Path

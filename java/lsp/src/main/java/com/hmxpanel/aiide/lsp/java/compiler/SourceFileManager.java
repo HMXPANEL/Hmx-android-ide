@@ -22,7 +22,7 @@ import static java.util.Collections.emptySet;
 
 import androidx.annotation.NonNull;
 import com.blankj.utilcode.util.CloseUtils;
-import com.hmxpanel.aiide.javac.config.JavacConfigProvider;
+import com.itsaky.androidide.javac.config.JavacConfigProvider;
 import com.hmxpanel.aiide.javac.services.fs.AndroidFsProviderImpl;
 import com.hmxpanel.aiide.projects.android.AndroidModule;
 import com.hmxpanel.aiide.projects.ModuleProject;

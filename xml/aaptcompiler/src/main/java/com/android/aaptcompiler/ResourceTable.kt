@@ -2,7 +2,7 @@ package com.android.aaptcompiler
 
 import androidx.collection.mutableIntObjectMapOf
 import com.android.aapt.Resources
-import com.hmxpanel.aiide.layoutlib.resources.ResourceVisibility
+import com.itsaky.androidide.layoutlib.resources.ResourceVisibility
 import com.hmxpanel.aiide.xml.res.IResourceEntry
 import com.hmxpanel.aiide.xml.res.IResourceGroup
 import com.hmxpanel.aiide.xml.res.IResourceTable

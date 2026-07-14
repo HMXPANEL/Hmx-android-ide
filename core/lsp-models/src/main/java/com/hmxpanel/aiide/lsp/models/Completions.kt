@@ -17,7 +17,7 @@
 
 package com.hmxpanel.aiide.lsp.models
 
-import com.hmxpanel.aiide.fuzzysearch.FuzzySearch
+import com.itsaky.androidide.fuzzysearch.FuzzySearch
 import com.hmxpanel.aiide.lsp.CancellableRequestParams
 import com.hmxpanel.aiide.lsp.edits.DefaultEditHandler
 import com.hmxpanel.aiide.lsp.edits.IEditHandler
