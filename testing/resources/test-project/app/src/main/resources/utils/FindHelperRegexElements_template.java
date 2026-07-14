@@ -1,4 +1,4 @@
-package com.itsaky.androidide.lsp.java.test;
+package com.hmxpanel.aiide.lsp.java.test;
 
 import java.util.*;
 

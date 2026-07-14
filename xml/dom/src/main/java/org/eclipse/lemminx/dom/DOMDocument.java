@@ -17,8 +17,8 @@
  */
 package org.eclipse.lemminx.dom;
 
-import com.itsaky.androidide.models.Position;
-import com.itsaky.androidide.models.Range;
+import com.hmxpanel.aiide.models.Position;
+import com.hmxpanel.aiide.models.Range;
 
 import java.net.URI;
 import java.net.URISyntaxException;
