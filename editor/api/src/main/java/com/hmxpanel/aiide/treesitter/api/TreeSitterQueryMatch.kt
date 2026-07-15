@@ -18,7 +18,6 @@
 package com.hmxpanel.aiide.treesitter.api
 
 import com.itsaky.androidide.treesitter.TSQueryCapture
-import com.itsaky.androidide.treesitter.TSQueryMatch
 import com.hmxpanel.aiide.utils.DefaultRecyclable
 import com.hmxpanel.aiide.utils.RecyclableObjectPool
 
@@ -29,7 +28,7 @@ class TreeSitterQueryMatch @JvmOverloads internal constructor(
   id: Int = 0,
   patternIndex: Int = 0,
   captures: Array<out TSQueryCapture?>? = null
-) : TSQueryMatch(id, patternIndex, captures, null),
+) : TreeSitterQueryMatchBase(id, patternIndex, captures),
   RecyclableObjectPool.Recyclable by DefaultRecyclable() {
 
   companion object {
