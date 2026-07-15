@@ -78,6 +78,10 @@ class IDEApplication : TermuxApplication() {
 
   init {
     if (!VMUtils.isJvm()) {
+      try {
+        Class.forName("com.itsaky.androidide.treesitter.TreeSitter")
+      } catch (_: Throwable) {
+      }
       TreeSitter.loadLibrary()
     }
 
