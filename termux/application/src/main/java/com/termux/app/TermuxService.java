@@ -210,7 +210,17 @@ public final class TermuxService extends Service implements AppShell.AppShellCli
     /** Make service run in foreground mode. */
     private void runStartForeground() {
         setupNotificationChannel();
-        startForeground(TermuxConstants.TERMUX_APP_NOTIFICATION_ID, buildNotification());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            // Android 14+ requires foreground service type
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                startForeground(TermuxConstants.TERMUX_APP_NOTIFICATION_ID, buildNotification(),
+                    ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+            } else {
+                startForeground(TermuxConstants.TERMUX_APP_NOTIFICATION_ID, buildNotification());
+            }
+        } else {
+            startForeground(TermuxConstants.TERMUX_APP_NOTIFICATION_ID, buildNotification());
+        }
     }
 
     /** Make service leave foreground mode. */

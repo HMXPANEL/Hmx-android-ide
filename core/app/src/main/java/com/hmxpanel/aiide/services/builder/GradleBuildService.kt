@@ -142,7 +142,8 @@ class GradleBuildService : Service(), BuildService, IToolingApiClient,
     @Suppress("SameParameterValue") isProgress: Boolean) {
     log.info("Showing notification to user...")
     createNotificationChannels()
-    startForeground(NOTIFICATION_ID, buildNotification(message, isProgress))
+    startForeground(NOTIFICATION_ID, buildNotification(message, isProgress),
+      ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
   }
 
   private fun createNotificationChannels() {
